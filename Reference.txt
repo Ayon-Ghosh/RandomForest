@@ -1,0 +1,6 @@
+Intuition of Algo -- Bootstrapping, Aggregation, Out of Bag sample, Out of Bag error:
+https://www.youtube.com/watch?v=J4Wdy0Wc_xQ
+
+Hyper parameter tuning:
+
+https://github.com/krishnaik06/All-Hyperparamter-Optimization/blob/master/Hyper%20Parameter%20Optimization.ipynb

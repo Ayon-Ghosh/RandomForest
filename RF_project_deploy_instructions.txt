@@ -1,0 +1,48 @@
+Deployment to Azure:
+•	Go to https://portal.azure.com/ and create an account if already haven’t created one.
+•	Go to the Azure account and create a web app.
+
+
+Reference URL: https://www.youtube.com/watch?v=qnbJcbjh-3s
+
+Also EnsembleLearningAndRandomForest.ipynb from Class_Random_Forest_Ensemble_Reference folder
+
+Resource Group: RandomForestAzure-ResourceGroup
+
+Name: RandomForestAzure
+
+https://randomforestazure.scm.azurewebsites.net:443/randomforestazure.git
+
+app url: https://randomforestazure.azurewebsites.net
+
+Git Clone URL to be copied and used in Command promt: https://null@randomforestazure.scm.azurewebsites.net:443/RandomForestAzure.git
+
+User ID: $RandomForestAzure
+
+password: 97FSc3LN4HX8XnDKoE1ocdirxcqyaugFXkJJEDRuoqm6N4dwtf8c8dh0oHr1
+
+Reference deployment:
+https://docs.microsoft.com/en-us/azure/app-service/deploy-local-git
+
+
+
+1.Open a command prompt and navigate to your project folder.
+
+2.Run git init to initialise an empty git repository
+
+3.Create a new remote git alias using the command: git remote add <alias> <git clone url>
+Example: git remote add azure https://null@randomforestazure.scm.azurewebsites.net:443/RandomForestAzure.git
+
+4.Use git add . to add all the files to the local git repository.
+
+5.Use git commit –m “First Commit” to commit the code to the git repo.
+
+6.Push the code to the remote repo using git push <alias> master –f
+Example: git push azure master –f
+Note: This command worked instead for me: git push azure master
+
+6.This prompts for a username and password. Provide the same credentials as copied in the step above.
+Example Credentials: Copyied from deployment credentials: User ID: $RandomForestAzure
+password: 97FSc3LN4HX8XnDKoE1ocdirxcqyaugFXkJJEDRuoqm6N4dwtf8c8dh0oHr1
+
+7.After deployment, from the ‘overview’ ¬¬¬section, copy the URL and paste into the browser to see the application running.
